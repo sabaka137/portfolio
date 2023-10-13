@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b2d6566a.css",
-    "main.js": "/portfolio/static/js/main.fbb9abb5.js",
+    "main.css": "/portfolio/static/css/main.a51e65c1.css",
+    "main.js": "/portfolio/static/js/main.ed48fa2f.js",
     "static/media/Outline.ttf": "/portfolio/static/media/Outline.b24b811513188db93f39.ttf",
     "static/media/Top1.jpg": "/portfolio/static/media/Top1.8c07adb847d10a8349b0.jpg",
     "static/media/Top2.jpg": "/portfolio/static/media/Top2.22c78b12469a03a25ecf.jpg",
@@ -16,6 +16,7 @@
     "static/media/RightPaper.png": "/portfolio/static/media/RightPaper.26f209543d7f5d012bde.png",
     "static/media/PPTEST6.png": "/portfolio/static/media/PPTEST6.6677300226d2ec5c3ad5.png",
     "static/media/LeftPaper.png": "/portfolio/static/media/LeftPaper.8fdf032eaba6a0720c83.png",
+    "static/media/WelcomePaper.png": "/portfolio/static/media/WelcomePaper.a91964ea1316f4ef1f84.png",
     "static/media/Luffy.gif": "/portfolio/static/media/Luffy.8e7c473dd7a5663228fa.gif",
     "static/media/DialogBg.jpg": "/portfolio/static/media/DialogBg.11e5c88d7aa8c9b35137.jpg",
     "static/media/Pixel1.ttf": "/portfolio/static/media/Pixel1.73aab226dc36e8eda591.ttf",
@@ -26,11 +27,11 @@
     "static/media/MobileForegroundT1.png": "/portfolio/static/media/MobileForegroundT1.8e121c813c2dc2c76fe9.png",
     "static/media/MobileForegroundT2.png": "/portfolio/static/media/MobileForegroundT2.f20d97f2cc1bc94b4c3c.png",
     "index.html": "/portfolio/index.html",
-    "main.b2d6566a.css.map": "/portfolio/static/css/main.b2d6566a.css.map",
-    "main.fbb9abb5.js.map": "/portfolio/static/js/main.fbb9abb5.js.map"
+    "main.a51e65c1.css.map": "/portfolio/static/css/main.a51e65c1.css.map",
+    "main.ed48fa2f.js.map": "/portfolio/static/js/main.ed48fa2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2d6566a.css",
-    "static/js/main.fbb9abb5.js"
+    "static/css/main.a51e65c1.css",
+    "static/js/main.ed48fa2f.js"
   ]
 }
