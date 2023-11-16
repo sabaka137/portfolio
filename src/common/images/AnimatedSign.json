@@ -1,0 +1,78 @@
+{"frames": {
+
+"s1.png":
+{
+	"frame": {"x":0,"y":0,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"s2.png":
+{
+	"frame": {"x":0,"y":75,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"s3.png":
+{
+	"frame": {"x":0,"y":150,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"s4.png":
+{
+	"frame": {"x":0,"y":225,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"s5.png":
+{
+	"frame": {"x":0,"y":300,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"s6.png":
+{
+	"frame": {"x":0,"y":375,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"s7.png":
+{
+	"frame": {"x":0,"y":450,"w":12,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":75},
+	"sourceSize": {"w":12,"h":75},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"animations": {
+	"s": ["s1.png","s2.png","s3.png","s4.png","s5.png","s6.png","s7.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "Sign.png",
+	"format": "RGBA8888",
+	"size": {"w":12,"h":525},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:731b24a2652af18f79057db6cede0748:4a9145302fa450b2a1c4a5c12e6d3efd:3f55c6a75439bf7fbf780d08c95b287e$"
+}
+}

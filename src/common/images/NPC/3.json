@@ -1,0 +1,47 @@
+{"frames": {
+
+"tile000.png":
+{
+	"frame": {"x":0,"y":0,"w":25,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":34},
+	"sourceSize": {"w":25,"h":34}
+},
+"tile001.png":
+{
+	"frame": {"x":0,"y":34,"w":25,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":34},
+	"sourceSize": {"w":25,"h":34}
+},
+"tile002.png":
+{
+	"frame": {"x":0,"y":68,"w":25,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":34},
+	"sourceSize": {"w":25,"h":34}
+},
+"tile003.png":
+{
+	"frame": {"x":0,"y":102,"w":25,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":25,"h":34},
+	"sourceSize": {"w":25,"h":34}
+}},
+"animations": {
+	"tile": ["tile000.png","tile001.png","tile002.png","tile003.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "GlassesGuy.png",
+	"format": "RGBA8888",
+	"size": {"w":25,"h":136},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0a9911c6f74c425a56127732a8f5124c:803daf93fefc2d6109d407b4b9d64252:7ca64e0d15803d1f719e10d33f077a16$"
+}
+}

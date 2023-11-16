@@ -1,0 +1,30 @@
+{"frames": {
+
+"image.psd (2).png":
+{
+	"frame": {"x":0,"y":0,"w":26,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":38},
+	"sourceSize": {"w":26,"h":38},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"image.psd (3).png":
+{
+	"frame": {"x":0,"y":38,"w":26,"h":38},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":26,"h":38},
+	"sourceSize": {"w":26,"h":38},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "Poneglif.png",
+	"format": "RGBA8888",
+	"size": {"w":26,"h":76},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:555cbf75255cfec4401d40762d18b46d:4d7fd5acc1c2f613b4d30bed4b0f745c:050144e4c1ee3d557f273b8b3e07ef63$"
+}
+}

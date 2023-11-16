@@ -1,0 +1,47 @@
+{"frames": {
+
+"tile000.png":
+{
+	"frame": {"x":0,"y":0,"w":23,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":34},
+	"sourceSize": {"w":23,"h":34}
+},
+"tile001.png":
+{
+	"frame": {"x":0,"y":34,"w":23,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":34},
+	"sourceSize": {"w":23,"h":34}
+},
+"tile002.png":
+{
+	"frame": {"x":0,"y":68,"w":23,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":34},
+	"sourceSize": {"w":23,"h":34}
+},
+"tile003.png":
+{
+	"frame": {"x":0,"y":102,"w":23,"h":34},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":34},
+	"sourceSize": {"w":23,"h":34}
+}},
+"animations": {
+	"tile": ["tile000.png","tile001.png","tile002.png","tile003.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "ManRIght.png",
+	"format": "RGBA8888",
+	"size": {"w":23,"h":136},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:797e73e016db3d7c8aff43e9fcbc3773:89b6a54b3c94c198c3d0b0ead628051e:15d2c7027194b6f9a197050b4f5370b3$"
+}
+}
