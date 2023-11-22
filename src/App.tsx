@@ -15,6 +15,7 @@ import WarningModal from "./components/Modal/WarningModal";
 import PreloaderScreen from "./components/PreloaderScreen";
 import { usePreloadImages } from "./components/useImagePreloader";
 import ProjectInDevelopment from "./components/Modal/ProjectInDevelopment";
+import { PortfolioData } from "./types/data";
 
 function App() {
   const imagesPreloaded = usePreloadImages();
@@ -24,7 +25,7 @@ function App() {
     null
   );
   const [aboutModal, setAboutModal] = useState(false);
-  const [portfolioModal, setPortfolioModal] = useState(false);
+  const [portfolioModal, setPortfolioModal] = useState<PortfolioData>(null);
   const [WorkingModal, setWorkingModal] = useState(false);
   const [textModal, setTextModal] = useState<string | null>(null);
   const [controlModal, setControlModal] = useState<boolean>(false);
@@ -47,7 +48,7 @@ function App() {
   useEffect(() => {
     if (
       dialogModal !== null ||
-      portfolioModal === true ||
+      portfolioModal !== null ||
       WorkingModal === true ||
       textModal !== null
     ) {
@@ -110,7 +111,7 @@ function App() {
             <AboutMeModal setControlModal={setControlModal} setAboutModal={setAboutModal} />
           )}
           {portfolioModal && (
-            <Portfolio setControlModal={setControlModal} setPortfolioModal={setPortfolioModal} />
+            <Portfolio  portfolioModal={portfolioModal} setControlModal={setControlModal} setPortfolioModal={setPortfolioModal} />
           )}
           {WorkingModal && <ProjectInDevelopment setControlModal={setControlModal} setWorkingModal={setWorkingModal} />}
           {greatingsModal && (

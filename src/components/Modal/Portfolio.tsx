@@ -17,6 +17,7 @@ import PrevButton from "../../common/images/PrevPage.png";
 import NextPage from "../../common/images/NextPage.png";
 import { copyContent } from "../../utils/CopyToClipboard";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { PortfolioData } from "../../types/data";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -495,11 +496,12 @@ const PortalContainer = styled.div`
 `;
 
 type Props = {
-  setPortfolioModal: Dispatch<SetStateAction<boolean>>;
+  setPortfolioModal: React.Dispatch<React.SetStateAction<PortfolioData>>;
   setControlModal: React.Dispatch<React.SetStateAction<boolean>>;
+  portfolioModal: any;
 };
 
-function Portfolio({ setPortfolioModal, setControlModal }: Props) {
+function Portfolio({ setPortfolioModal, setControlModal, portfolioModal }: Props) {
   const [pageFit, setPageFit] = useState<1 | 2>(window.innerWidth < 910 ? 1 : 2);
   const [currentPage, setCurrentPage] = useState(1);
   const [isCopied, setCopied] = useState(false);
@@ -520,7 +522,7 @@ function Portfolio({ setPortfolioModal, setControlModal }: Props) {
     });
   }, []);
   function handleClick() {
-    setPortfolioModal(false);
+    setPortfolioModal(null);
     setControlModal(true);
   }
   function onCopy() {
@@ -549,7 +551,7 @@ function Portfolio({ setPortfolioModal, setControlModal }: Props) {
               <img src={Banner} />
             </BannerItem>
             <Social>
-              <SocialItem onClick={() => window.open("https://t.me/sabaka137", "_bland")!.focus()}>
+              <SocialItem onClick={() => window.open("https://t.me/sabaka137", "_blank")!.focus()}>
                 <img src={Telegram} />
                 <div>https://t.me/sabaka137</div>
               </SocialItem>
@@ -563,7 +565,7 @@ function Portfolio({ setPortfolioModal, setControlModal }: Props) {
                 </SocialItem>
               </CopyToClipboard>
               <SocialItem
-                onClick={() => window.open("https://github.com/sabaka137", "_bland")!.focus()}
+                onClick={() => window.open("https://github.com/sabaka137", "_blank")!.focus()}
               >
                 <img src={Git} />
                 <div>https://github.com/sabaka137</div>
@@ -582,45 +584,18 @@ function Portfolio({ setPortfolioModal, setControlModal }: Props) {
 
           <PaperContent>
             <Title>О проекте</Title>
-            <Description>
-              Проект для изучения японского языка как в одиночку, так и с репетиторами. В нем я
-              реализовал возможность общаться в одном чате с преподавателем, а также использовать
-              камеру для поддержания контакта с преподавателями. С другими функциями вы можете
-              ознакомиться самостоятельно.
-            </Description>
+            <Description>{portfolioModal.description}</Description>
             <Chapter>
               <img src={LeftBracket} />
               <ChapterText>Технологии</ChapterText>
               <img src={RightBracket} />
             </Chapter>
             <StackContainer>
-              <StackItem>
-                <img src={Logos.htmlLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.cssLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.styled} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.typescriptLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.reactLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.reduxLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.mongoDBLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.expressLogo} />
-              </StackItem>
-              <StackItem>
-                <img src={Logos.socketIoLogo} />
-              </StackItem>
+              {portfolioModal.stack.map((item: any) => (
+                <StackItem>
+                  <img src={item.image} />
+                </StackItem>
+              ))}
             </StackContainer>
             <Chapter>
               <img src={LeftBracket} />
@@ -628,7 +603,7 @@ function Portfolio({ setPortfolioModal, setControlModal }: Props) {
               <img src={RightBracket} />
             </Chapter>
             <PortalContainer>
-              <a href="https://github.com/sabaka137/Japl" target="_blank">
+              <a href={portfolioModal.text} target="_blank">
                 <img src={Portal} />
               </a>
             </PortalContainer>

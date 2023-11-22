@@ -11,6 +11,7 @@ import Actions from "./Actions";
 import { IModifiedAnimatedSprite, IModifiedSprite } from "../../types/pixi-react";
 import IslandEntry from "./IslandEntry";
 import ActionSign from "./ActionSign";
+import { PortfolioData } from "../../types/data";
 
 type Props = {
   setDialogModal: React.Dispatch<React.SetStateAction<{
@@ -18,7 +19,7 @@ type Props = {
     text: string;
 } | null>>
   navigationRef: React.MutableRefObject<HTMLDivElement[]>;
-  setPortfolioModal: Dispatch<SetStateAction<boolean>>;
+  setPortfolioModal: React.Dispatch<React.SetStateAction<PortfolioData>>
   setTextModal: Dispatch<SetStateAction<string | null>>;
   controlRef:React.MutableRefObject<HTMLDivElement[]>
   setControlModal:React.Dispatch<React.SetStateAction<boolean>>;

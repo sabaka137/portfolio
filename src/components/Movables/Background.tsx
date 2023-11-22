@@ -10,6 +10,7 @@ import {
 import * as PIXI from "pixi.js";
 import { IModifiedAnimatedSprite, IModifiedSprite } from "../../types/pixi-react";
 import { Teleport } from "../../utils/TeleportUser";
+import { PortfolioData } from "../../types/data";
 
 type Props = {
   collisionsRefs: React.MutableRefObject<IModifiedSprite[]>;
@@ -29,11 +30,11 @@ type Props = {
     } | null>
   >;
   navigationRef: React.MutableRefObject<HTMLDivElement[]>;
-  setPortfolioModal: Dispatch<SetStateAction<boolean>>;
+  setPortfolioModal: React.Dispatch<React.SetStateAction<PortfolioData>>;
   setTextModal: Dispatch<SetStateAction<string | null>>;
   setControlModal: React.Dispatch<React.SetStateAction<boolean>>;
   controlRef: React.MutableRefObject<HTMLDivElement[]>;
-  setWarningModal: React.Dispatch<React.SetStateAction<string | null>>
+  setWarningModal: React.Dispatch<React.SetStateAction<string | null>>;
   moveAccess: boolean;
   setWorkingModal: React.Dispatch<React.SetStateAction<boolean>>;
 };
@@ -152,7 +153,6 @@ function Background({
                     });
                   }
                   if (item.type === "link") {
-                    
                     setWarningModal(item.content.text);
                     signRef.current.forEach((sign) => {
                       if (sign.renderId === item.id) {
@@ -161,7 +161,8 @@ function Background({
                     });
                   }
                   if (item.type === "portfolio") {
-                    setPortfolioModal(true);
+                    setPortfolioModal(item.content);
+
                     setControlModal(false);
                     signRef.current.forEach((sign) => {
                       if (sign.renderId === item.id) {
@@ -309,7 +310,8 @@ function Background({
                   });
                 }
                 if (item.type === "portfolio") {
-                  setPortfolioModal(true);
+                  setPortfolioModal(item.content);
+
                   signRef.current.forEach((sign) => {
                     if (sign.renderId === item.id) {
                       sign.visible = false;

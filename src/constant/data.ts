@@ -37,7 +37,6 @@ import { MapSetting } from "../types/data";
 
 import ActionSign from "../common/images/Sign.png";
 
-
 import { Logos } from "../common/images/Logo";
 import HtmlLogo from "../common/images/Logo/html.png";
 import CssLogo from "../common/images/Logo/css.png";
@@ -655,14 +654,41 @@ export const ACTION_HITBOX = [
     position: { x: 343.25, y: 759.5 },
     size: { width: 35.0, height: 31.5 },
     type: "portfolio",
-    content: { speakerName: "", text: "link3" },
+    content: {
+      speakerName: "",
+      text: "https://github.com/sabaka137/Japl",
+      description:
+        "Проект для изучения японского языка как в одиночку, так и с репетиторами. В нем яреализовал возможность общаться в одном чате с преподавателем, а также использовать камеру для поддержания контакта с преподавателями. С другими функциями вы можете ознакомиться самостоятельно.",
+      stack: [
+        { id: 1, image: Logos.htmlLogo },
+        { id: 2, image: Logos.cssLogo },
+        { id: 3, image: Logos.styled },
+        { id: 4, image: Logos.typescriptLogo },
+        { id: 5, image: Logos.reactLogo },
+        { id: 6, image: Logos.reduxLogo },
+        { id: 7, image: Logos.mongoDBLogo },
+        { id: 8, image: Logos.expressLogo },
+        { id: 9, image: Logos.socketIoLogo },
+      ],
+    },
   },
   {
     id: 14,
     position: { x: 325.75, y: 727.75 },
     size: { width: 35.0, height: 31.5 },
-    type: "inDeveloping",
-    content: { speakerName: "", text: "link3" },
+    type: "portfolio",
+    content: {
+      speakerName: "",
+      text: "https://sabaka137.github.io/AlphabetLearn/",
+      description: "Проект для удобного изучения японского алфавита, как кандзи, так и хирагана с помощью методики flashcards. Вы можете выбрать, какие кандзи вы хотите изучать, используя удобное выделение, а также добавлять или удалять кандзи из списка по вашему усмотрению.",
+      stack: [
+        { id: 1, image: Logos.htmlLogo },
+        { id: 2, image: Logos.cssLogo },
+        { id: 3, image: Logos.styled },
+        { id: 4, image: Logos.typescriptLogo },
+        { id: 5, image: Logos.reactLogo },
+      ],
+    },
   },
   {
     id: 15,
@@ -738,6 +764,7 @@ export const ACTION_SIGN = [
   { id: 12, x: 1327.67, y: 285.53, img: ActionSign },
 
   { id: 13, x: 360.0, y: 758.53, img: ActionSign },
+  { id: 14, x: 343.75, y: 727.75, img: ActionSign },
 
   { id: 16, x: 263.67, y: 313.33, img: ActionSign },
 

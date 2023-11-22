@@ -19,3 +19,10 @@ export type MapSetting = {
     b2: { offset: { x: number; y: number }; image: string };
   };
 };
+
+export type PortfolioData = {
+  speakerName:string,
+  text:string,
+  description?:string,
+  stack?:{id:number,image:string}[]
+} | null
